@@ -1,54 +1,76 @@
-# mvc
+# 🧩 Desafio: Lista de Tarefas Simples (To-Do List)
 
-### ✅ O que é MVC?
+**Objetivo:** Criar uma aplicação básica de lista de tarefas que permita adicionar, listar e remover tarefas, seguindo a estrutura MVC.
 
-MVC é um padrão de arquitetura de software que organiza a aplicação em três partes principais:
+## 🧱 Estrutura de Pastas
 
-* Parte	Responsabilidade
-* Model	Gerenciar os dados e a regra de negócio
-* View	Exibir a interface para o usuário
-* Controller	Fazer a ponte entre o usuário, o Model e a View
+```plaintext
+/mvc-tarefas/
+├── model/
+│   └── Tarefa.php
+├── view/
+│   ├── listar.php
+│   └── adicionar.php
+├── controller/
+│   └── TarefaController.php
+├── index.php
+├── .gitignore
+```
 
-### ✅ Como funciona o fluxo?
+<details>
+<summary>📚 O que é o padrão MVC?</summary>
 
-* Usuário faz uma requisição (ex.: envia um formulário).
+## MVC — Model, View, Controller
 
-* Controller recebe e decide o que fazer:
+O padrão **MVC** organiza o código de uma aplicação separando responsabilidades em três partes principais:
 
-* Chama o Model para manipular dados.
-
-* Chama a View para mostrar o resultado.
-
-* Model faz a lógica (ex.: consulta ou salva no banco).
-
-* View gera o HTML e exibe para o usuário.
-
-### ✅ Analogia simples: Restaurante
-
-MVC	Restaurante
-Controller	Garçom → recebe pedido e entrega prato
-Model	Cozinha → prepara o prato
-View	Prato → entregue ao cliente
+| Parte        | Responsabilidade                                 |
+|--------------|-------------------------------------------------|
+| **Model**    | Gerencia os dados e as regras de negócio         |
+| **View**     | Exibe a interface para o usuário                 |
+| **Controller** | Faz a ponte entre o usuário, o Model e a View   |
 
 ---
 
-### ✅ O que você ganha com MVC?
+### Como funciona o fluxo MVC?
 
-| ✅ Vantagens                              | ❌ Desvantagens                                   |
-|-------------------------------------------|--------------------------------------------------|
-| Separação de responsabilidades            | Mais arquivos e organização                      |
-| Código mais limpo e fácil de manter       | Pode ser overkill para sistemas muito simples    |
-| Mais fácil de testar e evoluir            | Requer disciplina de estrutura                   |
+1. O usuário faz uma ação (ex: envia um formulário).
+2. O **Controller** recebe a ação e decide o que fazer.
+3. O **Model** processa os dados e regras de negócio.
+4. O **View** mostra o resultado ao usuário.
 
+---
 
-### ✅ Quando usar MVC?
+### Analogia: Restaurante
 
-* Projetos pequenos: pode simplificar, mas depende.
+| MVC         | Restaurante                                  |
+|-------------|----------------------------------------------|
+| Controller  | Garçom: recebe o pedido e entrega o prato    |
+| Model       | Cozinha: prepara o prato                     |
+| View        | Prato: entregue ao cliente                   |
 
-* Projetos médios e grandes: recomendado.
+---
 
-* Trabalhos em equipe: essencial para manter organização.
+### Vantagens e Desvantagens
 
-### ✅ Dica profissional:
+| ✅ Vantagens                        | ❌ Desvantagens                              |
+|-------------------------------------|----------------------------------------------|
+| Separação de responsabilidades      | Mais arquivos e organização                  |
+| Código mais limpo e fácil de manter | Pode ser exagero para sistemas muito simples |
+| Facilita testes e evolução          | Requer disciplina na estrutura               |
 
-Mesmo em projetos pequenos, vale começar com uma estrutura simples de MVC, porque facilita a evolução sem precisar "refazer tudo" depois.
+---
+
+### Quando usar MVC?
+
+- Projetos médios e grandes: recomendado.
+- Trabalhos em equipe: essencial para organização.
+- Projetos pequenos: pode ajudar, mas avalie a complexidade.
+
+---
+
+### Dica
+
+Mesmo em projetos pequenos, começar com uma estrutura simples de MVC pode facilitar futuras melhorias sem precisar reescrever tudo.
+
+</details>
