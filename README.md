@@ -39,6 +39,8 @@ O padrão **MVC** organiza o código de uma aplicação separando responsabilida
 3. O **Model** processa os dados e regras de negócio.
 4. O **View** mostra o resultado ao usuário.
 
+![Desenho ilustrativo do fluxo MVC](img/desenho_interacao_mvc.jpeg)
+
 ---
 
 ### Analogia: Restaurante
@@ -48,6 +50,12 @@ O padrão **MVC** organiza o código de uma aplicação separando responsabilida
 | Controller  | Garçom: recebe o pedido e entrega o prato    |
 | Model       | Cozinha: prepara o prato                     |
 | View        | Prato: entregue ao cliente                   |
+| Banco de Dados | Estoque: ingredientes disponíveis            |
+
+Dúvida: 
+
+
+![Por que o controller não interage diretamente com o banco de dados?](img/duvida_controller_bd.jpeg)
 
 ---
 
