@@ -8,6 +8,7 @@ class Conexao {
     public static function getConexao() {
         if (self::$instancia === null) {
             try {
+                $tipo = getenv('DB_CONNECTION');
                 $host = getenv('DB_HOST');
                 $dbname = getenv('DB_NAME');
                 $usuario = getenv('DB_USER');
